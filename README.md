@@ -13,7 +13,7 @@ node code/file
 
 ### Sort
 
-+ [Bubble Sort]('./code/bubble.sort')
++ [Bubble Sort]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/bubble-sort.js')
 
 
 ### Reference
