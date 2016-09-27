@@ -1,9 +1,16 @@
 ## JavaScript-Algorithm-Learning
 
-JavaScript code for some classical algorithm
+JavaScript code[ES2015] for some classical algorithm
 
+### Start
 
+``` bash
+node code/file
+```
 
+### Sort
+
++ [Bubble Sort]('./code/bubble.sort')
 
 
 ### Reference
