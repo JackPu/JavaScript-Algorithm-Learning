@@ -23,6 +23,7 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-commonjs": "^1.0.0",
     "karma-jasmine": "^1.0.2",
-    "watchify": "^3.7.0"
+    "watchify": "^3.7.0",
+    "jasmine-core": "*"
   }
 }
