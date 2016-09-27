@@ -1,5 +1,8 @@
 ## JavaScript-Algorithm-Learning
 
+[![npm](https://img.shields.io/npm/v/npm.svg?maxAge=2592000)]()
+[![Build Status](https://travis-ci.org/JackPu/JavaScript-Algorithm-Learning.svg?branch=master)](https://travis-ci.org/JackPu/JavaScript-Algorithm-Learning)
+
 JavaScript code[ES2015] for some classical algorithm
 
 ### Start
