@@ -18,12 +18,14 @@
   "homepage": "https://github.com/JackPu/JavaScript-Algorithm-Learning#readme",
   "devDependencies": {
     "browserify": "^13.1.0",
+    "jasmine-core": "*",
     "karma": "^1.3.0",
     "karma-browserify": "^5.1.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-commonjs": "^1.0.0",
+    "karma-firefox-launcher": "^1.0.0",
     "karma-jasmine": "^1.0.2",
-    "watchify": "^3.7.0",
-    "jasmine-core": "*"
+    "karma-phantomjs-launcher": "^1.0.2",
+    "watchify": "^3.7.0"
   }
 }
