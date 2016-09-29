@@ -1,7 +1,6 @@
 /**
-** shell sort O(Nlog2N)
+* shell sort O(Nlog2N)
 **/
-
 function shellSort(arr) {
     let l = arr.length;
     let gap = l >> 1;
@@ -17,8 +16,6 @@ function shellSort(arr) {
         }
         gap = gap >> 1;
     }
-    
-    
     
     return arr;
     
