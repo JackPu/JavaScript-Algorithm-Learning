@@ -8,7 +8,7 @@ JavaScript code[ES2015] for some classical algorithm
 ### Start
 
 ``` bash
-node code/file
+npm run test
 ```
 
 ### Sort
