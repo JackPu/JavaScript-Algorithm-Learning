@@ -11,9 +11,15 @@ JavaScript code[ES2015] for some classical algorithm
 npm run test
 ```
 
-### Sort
+### List
 
-+ [Bubble Sort]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/bubble-sort.js')
++ [unique an array 数组去重]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/unique.js')
+
++ [find the maxium value 寻找最大值]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/unique.js')
+
++ [Bubble Sort 冒泡排序]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/bubble-sort.js')
+
++ [knspsack 背包问题]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/knspsack.js')
 
 
 ### Reference
