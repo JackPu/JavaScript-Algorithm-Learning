@@ -12,13 +12,10 @@ npm run test
 
 ### List
 
-+ [unique an array 数组去重]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/unique.js')
-
-+ [random string 随机字符串]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/random-string.js')
-
-+ [find duplicate char 寻找重复字符]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/find-the-max-duplicate-chat.js')
-
-+ [find the maxium value 寻找最大值]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/find-max.js')
++ [unique an array 数组去重]('./code/unique.js')
++ [random string 随机字符串]('./code/random-string.js')
++ [find duplicate char 寻找重复字符]('./code/find-the-max-duplicate-chat.js')
++ [find the maxium value 寻找最大值]('./code/find-max.js')
 
 #### Sort Algorithms
 
@@ -27,7 +24,6 @@ npm run test
 + [selection sort 选择排序]('./code/selection-sort.js')
 + [shell sort 选择排序]('./code/shell-sort.js')
 + [heap sort 堆排序]('./code/heap-sort.js')
-
 
 + [fibonacci sequence 斐波那契数列]('./code/fibonacci-sequence-canvas.js')
 + [binary search tree 二叉查找树](./code/binary-search-tree.js)
