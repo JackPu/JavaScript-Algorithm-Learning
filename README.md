@@ -22,15 +22,15 @@ npm run test
 
 #### Sort Algorithms
 
-+ [bubble Sort 冒泡排序]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/bubble-sort.js')
-+ [quick Sort 快速排序]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/quick-sort.js')
-+ [selection sort 选择排序]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/bubble-sort.js')
-+ [shell sort 选择排序]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/shell-sort.js')
-+ [heap sort 堆排序]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/heap-sort.js')
++ [bubble Sort 冒泡排序]('./code/bubble-sort.js')
++ [quick Sort 快速排序]('./code/quick-sort.js')
++ [selection sort 选择排序]('./code/selection-sort.js')
++ [shell sort 选择排序]('./code/shell-sort.js')
++ [heap sort 堆排序]('./code/heap-sort.js')
 
 
-+ [fibonacci sequence 斐波那契数列]('https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/fibonacci-sequence-canvas.js')
-+ [binary search tree 二叉查找树](https://github.com/JackPu/JavaScript-Algorithm-Learning/blob/master/code/binary-search-tree.js)
++ [fibonacci sequence 斐波那契数列]('./code/fibonacci-sequence-canvas.js')
++ [binary search tree 二叉查找树](./code/binary-search-tree.js)
 
 ### Reference
 
