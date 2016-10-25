@@ -21,5 +21,5 @@ function knapsack(capacity,size,value,n) {
     
 }
 
-module.exports = shellSort;
+module.exports = knapsack;
 

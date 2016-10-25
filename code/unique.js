@@ -3,7 +3,7 @@
 **/
 
 let unique = function(arr) {
-  var hashTable = {};
+  let hashTable = {};
   let data = [];
   for(let i=0,l=arr.length;i<l;i++) {
     if(!hashTable[arr[i]]) {
