@@ -17,15 +17,30 @@
   },
   "homepage": "https://github.com/JackPu/JavaScript-Algorithm-Learning#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-istanbul": "^4.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
     "browserify": "^13.1.0",
+    "istanbul": "^0.4.5",
     "jasmine-core": "*",
+    "jspm": "^0.16.53",
     "karma": "^1.3.0",
+    "karma-babel-preprocessor": "^7.0.0",
     "karma-browserify": "^5.1.0",
+    "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-commonjs": "^1.0.0",
+    "karma-coverage": "^1.1.1",
     "karma-firefox-launcher": "^1.0.0",
     "karma-jasmine": "^1.0.2",
-    "karma-phantomjs-launcher": "^1.0.2",
-    "watchify": "^3.7.0"
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-remap-coverage": "^0.1.4",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.6",
+    "watchify": "^3.7.0",
+    "webpack": "^2.6.1"
   }
 }

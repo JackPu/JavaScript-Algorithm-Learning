@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/binary-search-tree.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">src/</a> binary-search-tree.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80.49% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>66/82</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">71.74% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>33/46</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">84.62% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>11/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80.49% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>66/82</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * Binary Search Tree(BST or Ordered Binary Tree)
+ **/
+&nbsp;
+class Node {
+  constructor(data, left, right) {
+    this.data = data;
+    this.left = left;
+    this.right = right;
+  }
+&nbsp;
+  show() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    return this.data;</span>
+  }
+}
+&nbsp;
+&nbsp;
+class BinarySearchTree {
+&nbsp;
+  constructor() {
+    this.root = null;
+  }
+&nbsp;
+  insert(data) {
+    let n = new Node(data, null, null);
+    if (!this.root) {
+      return this.root = n;
+    }
+    let currentNode = this.root;
+    let parent = null;
+    while (1) {
+      parent = currentNode;
+      if (data &lt; currentNode.data) {
+        currentNode = currentNode.left;
+        if (currentNode === null) {
+          parent.left = n;
+          break;
+        }
+      } else {
+        currentNode = currentNode.right;
+        if (currentNode === null) {
+          parent.right = n;
+          break;
+        }
+      }
+    }
+  }
+&nbsp;
+  remove(data) {
+    this.root = this.removeNode(this.root, data)
+  }
+&nbsp;
+  removeNode(node, data) {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (node == null) {
+<span class="cstat-no" title="statement not covered" >      return null;</span>
+    }
+&nbsp;
+    if (data == node.data) {
+      // no children node
+      if (node.left == null &amp;&amp; node.right == null) {
+        return null;
+      }
+      <span class="missing-if-branch" title="else path not taken" >E</span>if (node.left == null) {
+        return node.right;
+      }
+<span class="cstat-no" title="statement not covered" >      if (node.right == null) {</span>
+<span class="cstat-no" title="statement not covered" >        return node.left;</span>
+      }
+      
+      let getSmallest = <span class="cstat-no" title="statement not covered" >function(node) <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >        if(node.left === null &amp;&amp; node.right == null) {</span>
+<span class="cstat-no" title="statement not covered" >          return node;</span>
+        }
+<span class="cstat-no" title="statement not covered" >        if(node.left != null) {</span>
+<span class="cstat-no" title="statement not covered" >          return node.left;</span>
+        }
+<span class="cstat-no" title="statement not covered" >        if(node.right !== null) {</span>
+<span class="cstat-no" title="statement not covered" >          return getSmallest(node.right);</span>
+        }
+        
+      }
+      let temNode = <span class="cstat-no" title="statement not covered" >getSmallest(node.right);</span>
+<span class="cstat-no" title="statement not covered" >      node.data = temNode.data;</span>
+<span class="cstat-no" title="statement not covered" >      node.right = this.removeNode(temNode.right,temNode.data);</span>
+<span class="cstat-no" title="statement not covered" >      return node;</span>
+&nbsp;
+    } else if (data &lt; node.data) {
+      node.left = this.removeNode(node.left,data); 
+      return node;
+    } else {
+      node.right = this.removeNode(node.right,data);  
+      return node;
+    }
+  }
+&nbsp;
+  find(data) {
+    var current = this.root;
+    while (current != null) {
+      if (data == current.data) {
+        break;
+      }
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (data &lt; current.data) {
+<span class="cstat-no" title="statement not covered" >        current = current.left;</span>
+      } else {
+        current = current.right
+      }
+    }
+    return current.data;
+  }
+&nbsp;
+  findMax() {
+    var current = this.root;
+    while (current.right != null) {
+      current = current.right;
+    }
+    return current.data;
+  }
+&nbsp;
+  findMin() {
+    var current = this.root;
+    while (current.left != null) {
+      current = current.left;
+    }
+    return current.data;
+  }
+&nbsp;
+  inOrder(node) {
+    if (!this.inOrderArr) {
+      this.inOrderArr = [];
+    }
+    if (node !== null) {
+      this.inOrder(node.left);
+      this.inOrderArr.push(node.data);
+      this.inOrder(node.right);
+    }
+  }
+&nbsp;
+  preOrder(node) {
+    if (!this.preOrderArr) {
+      this.preOrderArr = [];
+    }
+    if (node !== null) {
+      this.preOrderArr.push(node.data);
+      this.preOrder(node.left);
+      this.preOrder(node.right);
+    }
+  }
+&nbsp;
+  postOrder(node) {
+    if (!this.postOrderArr) {
+      this.postOrderArr = [];
+    }
+    if (node !== null) {
+      this.postOrder(node.left);
+      this.postOrder(node.right);
+      this.postOrderArr.push(node.data);
+&nbsp;
+    }
+  }
+&nbsp;
+}
+&nbsp;
+module.exports = BinarySearchTree;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Nov 16 2017 21:24:28 GMT+0800 (CST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

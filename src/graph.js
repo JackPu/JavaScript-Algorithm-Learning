@@ -20,16 +20,16 @@ class Graph(v) {
       this.adj[i].push('');
       this.marked[i] = false;
     }
-    
-    
+
+
   }
-  
+
   addEdge(v, w) {
     this.adj[v].push(w);
     this.adj[w].push(v);
     this.edges++;
   }
-  
+
   showGrap() {
     for(let i=0;i<this.vertices;i++) {
       console.log(i + '->');
@@ -40,18 +40,18 @@ class Graph(v) {
       }
     }
   }
-  
+
   dfs(v) {
     this.marked[v] = true;
     if(this.adj[v] != undefined) {
       for(let j in this.adj[v]) {
         if(!this.marked[j]) {
-          this.dfs(w);  
-        }  
+          this.dfs(w);
+        }
       }
     }
   }
-  
+
   bfs(s) {
     let q = [];
     this.marked[s] = true;
@@ -66,11 +66,9 @@ class Graph(v) {
           this.marked[j] = true;
           q.push(j);
         }
-        
+
       }
     }
   }
-  
+
 }
-
-

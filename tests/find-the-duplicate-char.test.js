@@ -1,5 +1,5 @@
-var findMaxDuplicateChar = require('../code/find-the-max-duplicate-char.js');
+const findMaxDuplicateChar = require('../src/find-the-max-duplicate-char.js');
 it('findMaxDuplicateChar', function () {
-    let str = 'afjghdfraaaasdenas ';
+    const str = 'afjghdfraaaasdenas ';
     expect(findMaxDuplicateChar(str)).toEqual('a');
 });

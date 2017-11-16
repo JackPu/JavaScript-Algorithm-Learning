@@ -1,4 +1,4 @@
-var bubbleSort = require('../code/bubble-sort.js');
+var bubbleSort = require('../src/bubble-sort.js');
 it('Bubble Sort', function () {
     let inputArr = [1,111,2,12,180,500,-12,0];
     let outputArr = bubbleSort(inputArr);

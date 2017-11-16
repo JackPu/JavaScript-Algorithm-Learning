@@ -1,6 +1,5 @@
-var randomString = require('../code/random-string.js');
+const randomString = require('../src/random-string.js');
 it('generate an random string', function () {
-    let str = randomString(8);
-    console.log(str);
+    const str = randomString(8);
     expect(str.length).toEqual(8);
 });
