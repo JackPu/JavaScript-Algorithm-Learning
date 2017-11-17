@@ -41,16 +41,7 @@ module.exports = function(config) {
         'tests/*.test.js': ['webpack'],
         'src/*.js': ['coverage'],
     },
-    coverageReporter: {
-      type: 'in-memory'
-    },
 
-    // define where to save final remaped coverage reports
-    remapCoverageReporter: {
-      'text-summary': null,
-      html: './coverage/html',
-      cobertura: './coverage/cobertura.xml'
-    },
     reporters: ['progress', 'coverage'],
     port: 9876,
     colors: true,
@@ -59,9 +50,14 @@ module.exports = function(config) {
     browsers: ['PhantomJS'],
     singleRun: false,
     concurrency: Infinity,
+    // Configure code coverage reporter
     coverageReporter: {
-      type : 'html',
-      dir : 'coverage/'
+        reporters: [
+            // generates ./coverage/lcov.info
+            {type:'lcovonly', subdir: '.'},
+            // generates ./coverage/coverage-final.json
+            {type:'json', subdir: '.'},
+        ]
     },
     plugins: [
         'karma-webpack',
