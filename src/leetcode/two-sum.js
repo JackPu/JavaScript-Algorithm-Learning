@@ -1,15 +1,14 @@
 // https://leetcode.com/problems/two-sum/description/
 module.exports = function (nums, target) {
     const arr = nums;
+    const keyMap = {};
     let i = 0;
-    let j = arr.length - 1;
-    while(arr[i] + arr[j] !== target) {
-        const val = arr[i] + arr[j];
-        if (val < target) {
-            i += 1;
-        }else if(val > target) {
-            j -= 1;
+    const l = arr.length;
+    for(i; i < l; i++) {
+        if (typeof keyMap[target - arr[i]] !== 'undefined') {
+            return [keyMap[target - arr[i]], i]
         }
+        keyMap[arr[i]] = i;
     }
     return [i, j];
 };
