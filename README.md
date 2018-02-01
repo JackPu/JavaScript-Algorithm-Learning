@@ -13,7 +13,8 @@ npm run test
 
 ### LeetCode Classical Problems
 
-+ [Two Sum](./src/leetcode/two-sum.js)   [Problem Details](https://leetcode.com/problems/two-sum/description/) 
++ [Two Sum](./src/leetcode/two-sum.js)   --- [Problem Details](https://leetcode.com/problems/two-sum/description/) 
++ [add-two-numbers](./src/leetcode/add-two-numbers.js) --- [Problem Details](https://leetcode.com/problems/add-two-numbers/description/)
 
 ### List
 
