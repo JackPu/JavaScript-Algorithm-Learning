@@ -1,7 +1,6 @@
 ## JavaScript-Algorithm-Learning
 
 [![Build Status](https://travis-ci.org/JackPu/JavaScript-Algorithm-Learning.svg?branch=master)](https://travis-ci.org/JackPu/JavaScript-Algorithm-Learning)
-
 <img src="https://codecov.io/gh/JackPu/JavaScript-Algorithm-Learning/graph/badge.svg" />
 
 JavaScript code[ES2015] for some classical algorithm
