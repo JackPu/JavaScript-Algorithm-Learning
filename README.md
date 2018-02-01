@@ -12,23 +12,27 @@ JavaScript code[ES2015] for some classical algorithm
 npm run test
 ```
 
+### LeetCode Classical Problems
+
++ [Two Sum](./src/leetcode/two-sum.js)   [Problem Details](https://leetcode.com/problems/two-sum/description/) 
+
 ### List
 
-+ [unique an array 数组去重]('./code/unique.js')
-+ [random string 随机字符串]('./code/random-string.js')
-+ [find duplicate char 寻找重复字符]('./code/find-the-max-duplicate-chat.js')
-+ [find the maxium value 寻找最大值]('./code/find-max.js')
++ [unique an array 数组去重]('./src/unique.js')
++ [random string 随机字符串]('./src/random-string.js')
++ [find duplicate char 寻找重复字符]('./src/find-the-max-duplicate-chat.js')
++ [find the maxium value 寻找最大值]('./src/find-max.js')
 
 #### Sort Algorithms
 
-+ [bubble Sort 冒泡排序]('./code/bubble-sort.js')
-+ [quick Sort 快速排序]('./code/quick-sort.js')
-+ [selection sort 选择排序]('./code/selection-sort.js')
-+ [shell sort 选择排序]('./code/shell-sort.js')
-+ [heap sort 堆排序]('./code/heap-sort.js')
++ [bubble Sort 冒泡排序]('./src/bubble-sort.js')
++ [quick Sort 快速排序]('./src/quick-sort.js')
++ [selection sort 选择排序]('./src/selection-sort.js')
++ [shell sort 选择排序]('./src/shell-sort.js')
++ [heap sort 堆排序]('./src/heap-sort.js')
 
-+ [fibonacci sequence 斐波那契数列]('./code/fibonacci-sequence-canvas.js')
-+ [binary search tree 二叉查找树](./code/binary-search-tree.js)
++ [fibonacci sequence 斐波那契数列]('./src/fibonacci-sequence-canvas.js')
++ [binary search tree 二叉查找树](./src/binary-search-tree.js)
 
 ### Reference
 

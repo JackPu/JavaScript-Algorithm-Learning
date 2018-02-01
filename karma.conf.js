@@ -17,7 +17,7 @@ module.exports = function(config) {
     files: [
       //  './node_modules/babel-polyfill/dist/polyfill.min.js',
         //'src/*.js',
-        'tests/*.test.js'
+        'tests/**/*.test.js'
     ],
     webpack: {
         module: {
@@ -38,7 +38,7 @@ module.exports = function(config) {
 
     ],
     preprocessors: {
-        'tests/*.test.js': ['webpack'],
+        'tests/**/*.test.js': ['webpack'],
         'src/*.js': ['coverage'],
     },
 
