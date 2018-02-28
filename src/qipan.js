@@ -45,25 +45,58 @@ someFunction(
 )
  return [ ]
 */
-// find e to check the position
-const findE(arr) {
+// find 'e' to check the empty coordinates
+const findE = function (arr) {
     const eCoor = [];
     arr.forEach((row, i) => {
         row.forEach((val, j) => {
             if (val === 'e') {
-                eCoor.push(row)
+                eCoor.push([i, j])
             }
         });
     })
+    return eCoor;
+}
+
+const checkVictory = function(x, y, role, arr, degree) {
+    arr[x][y] = role;
+    let result = false;
+    if (degree === 0) {
+        result = arr[x][0] === role && arr[x][1] === role && arr[x][2] === role;
+    } else if (degree === 90) {
+        result = arr[0][y] === role && arr[1][y] === role && arr[2][y] === role;
+    } else if (degree === 45) {
+        result = arr[0][0] === role && arr[1][1] === role && arr[2][2] === role;
+    } else if (degree === -45) {
+        result = arr[0][2] === role && arr[1][1] === role && arr[2][0] === role;
+    }
+    arr[x][y] = 'e';
+    return result;
+}
+
+// check if win to select the coordinate
+const queryVictory = function (role, coors, arr) {
+    const victoryResults = [];
+    coors.forEach((item) => {
+        var x = item[0];
+        var y = item[1];
+        [-45, 0, 45, 90].forEach((degree) => {
+            if (checkVictory(x, y, role, arr, degree)) {
+                return victoryResults.push([x, y]);
+            }
+        })
+    });
+    return victoryResults;
 }
 
 module.exports = function getResult(role, arr) {
     const result = [];
-    const eCoor = findE(arr)
+    const eCoor = findE(arr);
     if (eCoor.length === 0) {
         return [];
     }
-    
+    return queryVictory(role, eCoor, arr);
+
 }
 
 
