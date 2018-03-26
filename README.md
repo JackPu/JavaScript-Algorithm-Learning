@@ -16,6 +16,8 @@ npm run test
 + [Two Sum](./src/leetcode/two-sum.js)   --- [Problem Details](https://leetcode.com/problems/two-sum/description/) 
 + [add-two-numbers](./src/leetcode/add-two-numbers.js) --- [Problem Details](https://leetcode.com/problems/add-two-numbers/description/)
 
++ [Reverse Integer](./src/leetcode/reverse-integer.js) --- [Problem Details](https://leetcode.com/problems/reverse-integer/description/)
+
 ### List
 
 + [unique an array 数组去重](./src/unique.js)
@@ -36,6 +38,6 @@ npm run test
 
 ### Reference
 
-[Sorting Algorithm](http://khan4019.github.io/front-end-Interview-Questions/sort.html)
+[Sorting Algorithm] (http://khan4019.github.io/front-end-Interview-Questions/sort.html)
 
 [coding-interview-tips](https://www.interviewcake.com/article/javascript/coding-interview-tips)
