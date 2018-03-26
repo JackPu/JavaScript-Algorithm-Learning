@@ -8,8 +8,8 @@ module.exports = function (x) {
     }
     var m = x;
     var n = 0;
-    while(n < m) {
-        n += (m % 10 + n * 10)
+    while(m > 0) {
+        n = (m % 10 + n * 10)
         m = Math.floor(m / 10)
     }
     return n === x
