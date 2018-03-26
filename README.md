@@ -15,8 +15,9 @@ npm run test
 
 + [Two Sum](./src/leetcode/two-sum.js)   --- [Problem Details](https://leetcode.com/problems/two-sum/description/) 
 + [add-two-numbers](./src/leetcode/add-two-numbers.js) --- [Problem Details](https://leetcode.com/problems/add-two-numbers/description/)
-
 + [Reverse Integer](./src/leetcode/reverse-integer.js) --- [Problem Details](https://leetcode.com/problems/reverse-integer/description/)
++ [Palindrome Number](./src/leetcode/palindrome-number.js) --- [Problem Details](https://leetcode.com/problems/palindrome-number/description/)
+
 
 ### List
 
